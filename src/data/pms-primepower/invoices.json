@@ -1,0 +1,764 @@
+[
+  {
+    "id": 1,
+    "invoice_number": "INV-2026-0001",
+    "customer_id": 1,
+    "invoice_date": "2026-03-10",
+    "due_date": "2026-04-09",
+    "currency": "PHP",
+    "service": "Transformer preventive maintenance",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0412",
+    "notes": "Includes oil filtration and bushing inspection.",
+    "tax_amount": 25800,
+    "voided": false,
+    "issued_at": "2026-03-10",
+    "created_at": "2026-03-10",
+    "updated_at": "2026-04-05",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Transformer preventive maintenance - 1,000 kVA",
+        "quantity": 1,
+        "unit_price": 185000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Metering & protection calibration",
+        "quantity": 4,
+        "unit_price": 7500,
+        "account_code": "4120"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "invoice_number": "INV-2026-0002",
+    "customer_id": 2,
+    "invoice_date": "2026-03-22",
+    "due_date": "2026-04-21",
+    "currency": "PHP",
+    "service": "Substation upgrade works",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0433",
+    "notes": null,
+    "tax_amount": 50400,
+    "voided": false,
+    "issued_at": "2026-03-22",
+    "created_at": "2026-03-22",
+    "updated_at": "2026-04-18",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "13.8 kV substation upgrade and commissioning",
+        "quantity": 1,
+        "unit_price": 420000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "invoice_number": "INV-2026-0003",
+    "customer_id": 3,
+    "invoice_date": "2026-04-05",
+    "due_date": "2026-06-04",
+    "currency": "PHP",
+    "service": "Feeder line rehabilitation",
+    "payment_terms": "net60",
+    "reference_so": "SO-2026-0461",
+    "notes": "Partial payment received; balance carried forward.",
+    "tax_amount": 48000,
+    "voided": false,
+    "issued_at": "2026-04-05",
+    "created_at": "2026-04-05",
+    "updated_at": "2026-06-02",
+    "issuer_name": "Engr. M. Bautista",
+    "line_items": [
+      {
+        "description": "Feeder line rehabilitation - 2.4 km",
+        "quantity": 1,
+        "unit_price": 310000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Power quality audit",
+        "quantity": 2,
+        "unit_price": 45000,
+        "account_code": "4130"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "invoice_number": "INV-2026-0004",
+    "customer_id": 4,
+    "invoice_date": "2026-04-18",
+    "due_date": "2026-05-18",
+    "currency": "PHP",
+    "service": "Emergency generator servicing",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0490",
+    "notes": null,
+    "tax_amount": 13680,
+    "voided": false,
+    "issued_at": "2026-04-18",
+    "created_at": "2026-04-18",
+    "updated_at": "2026-09-10",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Emergency generator servicing - 500 kVA",
+        "quantity": 3,
+        "unit_price": 38000,
+        "account_code": "4140"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "invoice_number": "INV-2026-0005",
+    "customer_id": 5,
+    "invoice_date": "2026-05-02",
+    "due_date": "2026-05-17",
+    "currency": "PHP",
+    "service": "Electrical system retrofit",
+    "payment_terms": "net15",
+    "reference_so": null,
+    "notes": null,
+    "tax_amount": 11580,
+    "voided": false,
+    "issued_at": "2026-05-02",
+    "created_at": "2026-05-02",
+    "updated_at": "2026-05-15",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Electrical system retrofit - distribution panel",
+        "quantity": 1,
+        "unit_price": 96500,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "invoice_number": "INV-2026-0006",
+    "customer_id": 7,
+    "invoice_date": "2026-04-25",
+    "due_date": "2026-06-24",
+    "currency": "PHP",
+    "service": "Substation upgrade works",
+    "payment_terms": "net60",
+    "reference_so": "SO-2026-0502",
+    "notes": "Milestone billing; retention released on acceptance.",
+    "tax_amount": 146400,
+    "voided": false,
+    "issued_at": "2026-04-25",
+    "created_at": "2026-04-25",
+    "updated_at": "2026-06-20",
+    "issuer_name": "Engr. M. Bautista",
+    "line_items": [
+      {
+        "description": "69 kV substation upgrade works",
+        "quantity": 1,
+        "unit_price": 980000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Switchgear installation & commissioning",
+        "quantity": 1,
+        "unit_price": 240000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "invoice_number": "INV-2026-0007",
+    "customer_id": 9,
+    "invoice_date": "2026-05-12",
+    "due_date": "2026-06-11",
+    "currency": "PHP",
+    "service": "Transformer preventive maintenance",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0521",
+    "notes": "Follow-up sent 2026-08-18.",
+    "tax_amount": 34800,
+    "voided": false,
+    "issued_at": "2026-05-12",
+    "created_at": "2026-05-12",
+    "updated_at": "2026-07-10",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Transformer preventive maintenance - 5 MVA",
+        "quantity": 2,
+        "unit_price": 145000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "invoice_number": "INV-2026-0008",
+    "customer_id": 11,
+    "invoice_date": "2026-06-01",
+    "due_date": "2026-06-16",
+    "currency": "PHP",
+    "service": "Metering & protection calibration",
+    "payment_terms": "net15",
+    "reference_so": "SO-2026-0544",
+    "notes": null,
+    "tax_amount": 13296,
+    "voided": false,
+    "issued_at": "2026-06-01",
+    "created_at": "2026-06-01",
+    "updated_at": "2026-06-14",
+    "issuer_name": "Engr. K. Mendoza",
+    "line_items": [
+      {
+        "description": "Metering & protection calibration",
+        "quantity": 6,
+        "unit_price": 9800,
+        "account_code": "4120"
+      },
+      {
+        "description": "Power quality audit - data hall",
+        "quantity": 1,
+        "unit_price": 52000,
+        "account_code": "4130"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "invoice_number": "INV-2026-0009",
+    "customer_id": 6,
+    "invoice_date": "2026-06-08",
+    "due_date": "2026-07-08",
+    "currency": "PHP",
+    "service": "Feeder line rehabilitation",
+    "payment_terms": "net30",
+    "reference_so": null,
+    "notes": "Partial payment applied against principal.",
+    "tax_amount": 32160,
+    "voided": false,
+    "issued_at": "2026-06-08",
+    "created_at": "2026-06-08",
+    "updated_at": "2026-07-05",
+    "issuer_name": "Engr. M. Bautista",
+    "line_items": [
+      {
+        "description": "Feeder line rehabilitation - plantation area",
+        "quantity": 1,
+        "unit_price": 268000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "invoice_number": "INV-2026-0010",
+    "customer_id": 14,
+    "invoice_date": "2026-05-20",
+    "due_date": "2026-07-19",
+    "currency": "PHP",
+    "service": "Electrical system retrofit",
+    "payment_terms": "net60",
+    "reference_so": "SO-2026-0533",
+    "notes": null,
+    "tax_amount": 86760,
+    "voided": false,
+    "issued_at": "2026-05-20",
+    "created_at": "2026-05-20",
+    "updated_at": "2026-08-30",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Electrical system retrofit - traction power room",
+        "quantity": 1,
+        "unit_price": 640000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Emergency generator servicing",
+        "quantity": 2,
+        "unit_price": 41500,
+        "account_code": "4140"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "invoice_number": "INV-2026-0011",
+    "customer_id": 1,
+    "invoice_date": "2026-06-25",
+    "due_date": "2026-07-25",
+    "currency": "PHP",
+    "service": "Switchgear installation & commissioning",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0568",
+    "notes": null,
+    "tax_amount": 21000,
+    "voided": false,
+    "issued_at": "2026-06-25",
+    "created_at": "2026-06-25",
+    "updated_at": "2026-06-25",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Switchgear installation & commissioning",
+        "quantity": 1,
+        "unit_price": 175000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "invoice_number": "INV-2026-0012",
+    "customer_id": 13,
+    "invoice_date": "2026-06-30",
+    "due_date": "2026-07-30",
+    "currency": "PHP",
+    "service": "Power quality audit",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0577",
+    "notes": null,
+    "tax_amount": 15840,
+    "voided": false,
+    "issued_at": "2026-06-30",
+    "created_at": "2026-06-30",
+    "updated_at": "2026-07-28",
+    "issuer_name": "Engr. K. Mendoza",
+    "line_items": [
+      {
+        "description": "Power quality audit - solar inverter yard",
+        "quantity": 3,
+        "unit_price": 44000,
+        "account_code": "4130"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "invoice_number": "INV-2026-0013",
+    "customer_id": 17,
+    "invoice_date": "2026-07-06",
+    "due_date": "2026-08-05",
+    "currency": "PHP",
+    "service": "Transformer preventive maintenance",
+    "payment_terms": "net30",
+    "reference_so": null,
+    "notes": null,
+    "tax_amount": 27168,
+    "voided": false,
+    "issued_at": "2026-07-06",
+    "created_at": "2026-07-06",
+    "updated_at": "2026-07-06",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Transformer preventive maintenance - 750 kVA",
+        "quantity": 1,
+        "unit_price": 210000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Metering & protection calibration",
+        "quantity": 2,
+        "unit_price": 8200,
+        "account_code": "4120"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "invoice_number": "INV-2026-0014",
+    "customer_id": 3,
+    "invoice_date": "2026-06-15",
+    "due_date": "2026-08-14",
+    "currency": "PHP",
+    "service": "Substation upgrade works",
+    "payment_terms": "net60",
+    "reference_so": "SO-2026-0580",
+    "notes": null,
+    "tax_amount": 42600,
+    "voided": false,
+    "issued_at": "2026-06-15",
+    "created_at": "2026-06-15",
+    "updated_at": "2026-06-15",
+    "issuer_name": "Engr. M. Bautista",
+    "line_items": [
+      {
+        "description": "Substation upgrade works - rolling mill",
+        "quantity": 1,
+        "unit_price": 355000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "invoice_number": "INV-2026-0015",
+    "customer_id": 18,
+    "invoice_date": "2026-07-01",
+    "due_date": "2026-08-30",
+    "currency": "PHP",
+    "service": "Feeder line rehabilitation",
+    "payment_terms": "net60",
+    "reference_so": "SO-2026-0599",
+    "notes": "Partial payment received 2026-08-26.",
+    "tax_amount": 40080,
+    "voided": false,
+    "issued_at": "2026-07-01",
+    "created_at": "2026-07-01",
+    "updated_at": "2026-08-26",
+    "issuer_name": "Engr. K. Mendoza",
+    "line_items": [
+      {
+        "description": "Feeder line rehabilitation - solar farm collector",
+        "quantity": 1,
+        "unit_price": 288000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Power quality audit",
+        "quantity": 1,
+        "unit_price": 46000,
+        "account_code": "4130"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "invoice_number": "INV-2026-0016",
+    "customer_id": 16,
+    "invoice_date": "2026-07-22",
+    "due_date": "2026-08-21",
+    "currency": "PHP",
+    "service": "Emergency generator servicing",
+    "payment_terms": "net30",
+    "reference_so": null,
+    "notes": null,
+    "tax_amount": 17520,
+    "voided": false,
+    "issued_at": "2026-07-22",
+    "created_at": "2026-07-22",
+    "updated_at": "2026-07-22",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Emergency generator servicing - port terminal",
+        "quantity": 4,
+        "unit_price": 36500,
+        "account_code": "4140"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "invoice_number": "INV-2026-0017",
+    "customer_id": 8,
+    "invoice_date": "2026-07-28",
+    "due_date": "2026-08-27",
+    "currency": "PHP",
+    "service": "Electrical system retrofit",
+    "payment_terms": "net30",
+    "reference_so": null,
+    "notes": null,
+    "tax_amount": 14640,
+    "voided": false,
+    "issued_at": "2026-07-28",
+    "created_at": "2026-07-28",
+    "updated_at": "2026-07-28",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Electrical system retrofit - cold room distribution",
+        "quantity": 1,
+        "unit_price": 122000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "invoice_number": "INV-2026-0018",
+    "customer_id": 2,
+    "invoice_date": "2026-08-03",
+    "due_date": "2026-09-02",
+    "currency": "PHP",
+    "service": "Switchgear installation & commissioning",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0621",
+    "notes": null,
+    "tax_amount": 31800,
+    "voided": false,
+    "issued_at": "2026-08-03",
+    "created_at": "2026-08-03",
+    "updated_at": "2026-09-01",
+    "issuer_name": "Engr. K. Mendoza",
+    "line_items": [
+      {
+        "description": "Switchgear installation & commissioning - 34.5 kV",
+        "quantity": 1,
+        "unit_price": 265000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "invoice_number": "INV-2026-0019",
+    "customer_id": 11,
+    "invoice_date": "2026-08-10",
+    "due_date": "2026-08-25",
+    "currency": "PHP",
+    "service": "Metering & protection calibration",
+    "payment_terms": "net15",
+    "reference_so": "SO-2026-0630",
+    "notes": null,
+    "tax_amount": 28992,
+    "voided": false,
+    "issued_at": "2026-08-10",
+    "created_at": "2026-08-10",
+    "updated_at": "2026-08-24",
+    "issuer_name": "Engr. K. Mendoza",
+    "line_items": [
+      {
+        "description": "Metering & protection calibration",
+        "quantity": 8,
+        "unit_price": 9200,
+        "account_code": "4120"
+      },
+      {
+        "description": "Transformer preventive maintenance - data hall",
+        "quantity": 1,
+        "unit_price": 168000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "invoice_number": "INV-2026-0020",
+    "customer_id": 14,
+    "invoice_date": "2026-07-15",
+    "due_date": "2026-09-13",
+    "currency": "PHP",
+    "service": "Power quality audit",
+    "payment_terms": "net60",
+    "reference_so": "SO-2026-0604",
+    "notes": null,
+    "tax_amount": 11880,
+    "voided": false,
+    "issued_at": "2026-07-15",
+    "created_at": "2026-07-15",
+    "updated_at": "2026-07-15",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Power quality audit - depot substation",
+        "quantity": 2,
+        "unit_price": 49500,
+        "account_code": "4130"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "invoice_number": "INV-2026-0021",
+    "customer_id": 12,
+    "invoice_date": "2026-08-14",
+    "due_date": "2026-09-13",
+    "currency": "PHP",
+    "service": "Emergency generator servicing",
+    "payment_terms": "net30",
+    "reference_so": null,
+    "notes": null,
+    "tax_amount": 8160,
+    "voided": false,
+    "issued_at": "2026-08-14",
+    "created_at": "2026-08-14",
+    "updated_at": "2026-08-14",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Emergency generator servicing - processing plant",
+        "quantity": 2,
+        "unit_price": 34000,
+        "account_code": "4140"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "invoice_number": "INV-2026-0022",
+    "customer_id": 9,
+    "invoice_date": "2026-08-20",
+    "due_date": "2026-09-19",
+    "currency": "PHP",
+    "service": "Substation upgrade works",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0648",
+    "notes": null,
+    "tax_amount": 53400,
+    "voided": false,
+    "issued_at": "2026-08-20",
+    "created_at": "2026-08-20",
+    "updated_at": "2026-08-20",
+    "issuer_name": "Engr. M. Bautista",
+    "line_items": [
+      {
+        "description": "Substation upgrade works - process area",
+        "quantity": 1,
+        "unit_price": 445000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "invoice_number": "INV-2026-0023",
+    "customer_id": 4,
+    "invoice_date": "2026-08-26",
+    "due_date": "2026-09-25",
+    "currency": "PHP",
+    "service": "Feeder line rehabilitation",
+    "payment_terms": "net30",
+    "reference_so": null,
+    "notes": null,
+    "tax_amount": 33060,
+    "voided": false,
+    "issued_at": "2026-08-26",
+    "created_at": "2026-08-26",
+    "updated_at": "2026-08-26",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Feeder line rehabilitation - grid tie",
+        "quantity": 1,
+        "unit_price": 232000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Power quality audit",
+        "quantity": 1,
+        "unit_price": 43500,
+        "account_code": "4130"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "invoice_number": "INV-2026-0024",
+    "customer_id": 13,
+    "invoice_date": "2026-09-01",
+    "due_date": "2026-10-01",
+    "currency": "PHP",
+    "service": "Transformer preventive maintenance",
+    "payment_terms": "net30",
+    "reference_so": "SO-2026-0661",
+    "notes": null,
+    "tax_amount": 36480,
+    "voided": false,
+    "issued_at": "2026-09-01",
+    "created_at": "2026-09-01",
+    "updated_at": "2026-09-01",
+    "issuer_name": "Engr. K. Mendoza",
+    "line_items": [
+      {
+        "description": "Transformer preventive maintenance - 10 MVA",
+        "quantity": 2,
+        "unit_price": 152000,
+        "account_code": "4110"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "invoice_number": "INV-2026-0025",
+    "customer_id": 7,
+    "invoice_date": "2026-08-05",
+    "due_date": "2026-10-04",
+    "currency": "PHP",
+    "service": "Electrical system retrofit",
+    "payment_terms": "net60",
+    "reference_so": "SO-2026-0637",
+    "notes": "Long-lead equipment delivered; commissioning pending.",
+    "tax_amount": 91560,
+    "voided": false,
+    "issued_at": "2026-08-05",
+    "created_at": "2026-08-05",
+    "updated_at": "2026-08-05",
+    "issuer_name": "Engr. M. Bautista",
+    "line_items": [
+      {
+        "description": "Electrical system retrofit - control building",
+        "quantity": 1,
+        "unit_price": 715000,
+        "account_code": "4110"
+      },
+      {
+        "description": "Metering & protection calibration",
+        "quantity": 5,
+        "unit_price": 9600,
+        "account_code": "4120"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "invoice_number": "INV-2026-0026",
+    "customer_id": 15,
+    "invoice_date": "2026-09-05",
+    "due_date": "2026-09-20",
+    "currency": "PHP",
+    "service": "Emergency generator servicing",
+    "payment_terms": "net15",
+    "reference_so": null,
+    "notes": null,
+    "tax_amount": 7800,
+    "voided": false,
+    "issued_at": "2026-09-05",
+    "created_at": "2026-09-05",
+    "updated_at": "2026-09-05",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Emergency generator servicing - resort standby units",
+        "quantity": 2,
+        "unit_price": 32500,
+        "account_code": "4140"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "invoice_number": "INV-2026-0027",
+    "customer_id": 5,
+    "invoice_date": "2026-04-10",
+    "due_date": "2026-04-25",
+    "currency": "PHP",
+    "service": "Electrical system retrofit",
+    "payment_terms": "net15",
+    "reference_so": null,
+    "notes": "Voided - superseded by PO revision 2.",
+    "tax_amount": 10560,
+    "voided": true,
+    "issued_at": "2026-04-10",
+    "created_at": "2026-04-10",
+    "updated_at": "2026-04-12",
+    "issuer_name": "Engr. A. Reyes",
+    "line_items": [
+      {
+        "description": "Electrical system retrofit - service entrance",
+        "quantity": 1,
+        "unit_price": 88000,
+        "account_code": "4110"
+      }
+    ]
+  }
+]

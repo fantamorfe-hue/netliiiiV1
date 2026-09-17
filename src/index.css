@@ -1,0 +1,272 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-switch: var(--switch);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --radius: 0.625rem;
+  --background: #F2F7FC;
+  --foreground: #0A1B2E;
+  --card: #EDF5FB;
+  --card-foreground: #0A1B2E;
+  --popover: #EDF5FB;
+  --popover-foreground: #0A1B2E;
+  --primary: #007DCC;
+  --primary-foreground: #FAF9F6;
+  --secondary: #E4F0F8;
+  --secondary-foreground: #0A1B2E;
+  --muted: #E4F0F8;
+  --muted-foreground: #486F91;
+  --accent: #007DCC;
+  --accent-foreground: #FAF9F6;
+  --destructive: #d32f2f;
+  --destructive-foreground: #FAF9F6;
+  --border: rgba(0, 125, 204, 0.15);
+  --input: rgba(0, 125, 204, 0.15);
+  --switch: #8FBDDC;
+  --ring: #007DCC;
+  --chart-1: #007DCC;
+  --chart-2: #33A1E6;
+  --chart-3: #285373;
+  --chart-4: #486F91;
+  --chart-5: #8FBDDC;
+  --sidebar: #EDF5FB;
+  --sidebar-foreground: #0A1B2E;
+  --sidebar-primary: #007DCC;
+  --sidebar-primary-foreground: #FAF9F6;
+  --sidebar-accent: #E4F0F8;
+  --sidebar-accent-foreground: #0A1B2E;
+  --sidebar-border: rgba(0, 125, 204, 0.15);
+  --sidebar-ring: #007DCC;
+}
+
+.dark {
+  --background: #0F1B26;
+  --foreground: #E3EDF5;
+  --card: #16222E;
+  --card-foreground: #E3EDF5;
+  --popover: #16222E;
+  --popover-foreground: #E3EDF5;
+  --primary: #33A1E6;
+  --primary-foreground: #0F1B26;
+  --secondary: #1D2A37;
+  --secondary-foreground: #E3EDF5;
+  --muted: #1D2A37;
+  --muted-foreground: #90A7B9;
+  --accent: #33A1E6;
+  --accent-foreground: #0F1B26;
+  --destructive: #ef4444;
+  --destructive-foreground: #E3EDF5;
+  --border: rgba(144, 167, 185, 0.12);
+  --input: rgba(144, 167, 185, 0.12);
+  --switch: #33A1E6;
+  --ring: #33A1E6;
+  --chart-1: #33A1E6;
+  --chart-2: #007DCC;
+  --chart-3: #486F91;
+  --chart-4: #90A7B9;
+  --chart-5: #1D2A37;
+  --sidebar: #131E29;
+  --sidebar-foreground: #E3EDF5;
+  --sidebar-primary: #33A1E6;
+  --sidebar-primary-foreground: #0F1B26;
+  --sidebar-accent: #1D2A37;
+  --sidebar-accent-foreground: #E3EDF5;
+  --sidebar-border: rgba(144, 167, 185, 0.12);
+  --sidebar-ring: #33A1E6;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: var(--font-inter);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Ensure consistent font rendering across different DPI levels */
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+  body {
+    -webkit-font-smoothing: subpixel-antialiased;
+  }
+}
+
+/* Fix for sidebar "none" mode height issue */
+.sidebar-none-mode [data-slot="sidebar"] {
+  height: 100vh !important;
+  min-height: 100vh !important;
+}
+
+/* Fix for right-side inset variant support */
+@media (min-width: 768px) {
+  /* Right sidebar inset variant - margin adjustments */
+  [data-side="right"][data-variant="inset"] ~ [data-slot="sidebar-inset"] {
+    margin-right: 0 !important;
+  }
+
+  /* Right sidebar inset variant - collapsed state margin */
+  [data-side="right"][data-variant="inset"][data-state="collapsed"] ~ [data-slot="sidebar-inset"] {
+    margin-right: 0.5rem !important;
+  }
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Logo carousel animation */
+@keyframes logo-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-144rem); /* 12 items * 12rem = 144rem */
+  }
+}
+
+.animate-logo-scroll {
+  animation: logo-scroll 30s linear infinite;
+}
+
+.animate-logo-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Accounts Payable table adapts to the card's available width, not the browser width.
+   This keeps the table readable when the navigation sidebar is open. */
+.ap-table {
+  container-type: inline-size;
+}
+
+.ap-table [data-slot="table"] {
+  table-layout: fixed;
+}
+
+.ap-table .ap-table__select,
+.ap-table .ap-table__id,
+.ap-table .ap-table__due-date,
+.ap-table .ap-table__branch,
+.ap-table .ap-table__category,
+.ap-table .ap-table__status,
+.ap-table .ap-table__priority {
+  display: none;
+}
+
+.ap-table .ap-table__vendor {
+  width: 34%;
+}
+
+.ap-table .ap-table__description {
+  width: auto;
+}
+
+.ap-table .ap-table__actions {
+  width: 3rem;
+}
+
+@container (min-width: 32rem) {
+  .ap-table .ap-table__select {
+    display: table-cell;
+    width: 2.5rem;
+  }
+
+  .ap-table .ap-table__vendor {
+    width: 28%;
+  }
+}
+
+@container (min-width: 40rem) {
+  .ap-table .ap-table__id,
+  .ap-table .ap-table__due-date {
+    display: table-cell;
+  }
+
+  .ap-table .ap-table__id {
+    width: 4.75rem;
+  }
+
+  .ap-table .ap-table__due-date {
+    width: 6.25rem;
+  }
+
+  .ap-table .ap-table__vendor {
+    width: 22%;
+  }
+}
+
+@container (min-width: 52rem) {
+  .ap-table .ap-table__branch,
+  .ap-table .ap-table__status {
+    display: table-cell;
+  }
+
+  .ap-table .ap-table__branch {
+    width: 6.75rem;
+  }
+
+  .ap-table .ap-table__status {
+    width: 8rem;
+  }
+}
+
+@container (min-width: 68rem) {
+  .ap-table .ap-table__category,
+  .ap-table .ap-table__priority {
+    display: table-cell;
+  }
+
+  .ap-table .ap-table__category {
+    width: 8rem;
+  }
+
+  .ap-table .ap-table__priority {
+    width: 5.75rem;
+  }
+}
