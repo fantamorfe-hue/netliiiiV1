@@ -1,1 +1,0 @@
-const t="/api";async function n(o,e){const a=await fetch(`${t}${o}`,{...e,credentials:"include",headers:{Accept:"application/json",...e?.body?{"Content-Type":"application/json"}:{},...e?.headers}}),s=await a.json().catch(()=>({}));if(!a.ok)throw new Error(s.message??"Request failed");return s}export{n as a};

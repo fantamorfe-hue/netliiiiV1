@@ -1,0 +1,1 @@
+import{j as g}from"./index-CBEXkjOV.js";const a="/assets/darkMODE-DlVbBZ6o.jpg",e=a;function c({size:o=240,className:t,alt:r="Logo",...s}){return g.jsx("img",{src:e,width:o,height:o,alt:r,className:t,...s})}export{c as L};
